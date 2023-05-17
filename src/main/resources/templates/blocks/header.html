@@ -1,0 +1,26 @@
+<div th:fragment="header" xmlns:th="http://www.w3.org/1999/xhtml">
+  <header>
+    <div class="main-menu text-center">
+      <nav>
+        <ul>
+          <li><a href="home.html">Главная</a>
+          <li><a href="blog-main.html">Статьи</a>
+          <li><a href="add-post.html">Добавить обьявлений</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+          <input type="search" class="form-control" placeholder="Поиск..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-light text-dark me-2" href="templates/login.html">Вход</button>
+          <button type="button" class="btn btn-primary">Регистрация</button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

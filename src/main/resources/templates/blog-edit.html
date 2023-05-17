@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymleaf.org ">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="container mt-5 mb - 5">
+  <h1>Редактирование объявлений</h1>
+  <div th:each="el : ${post}">
+    <form method="post">
+      <input type="text" th:value="${el.title}" name="title" placeholder="Введите Ваше имя" class="form-control"><br>
+      <input type="text" th:value="${el.anons}" name="anons" placeholder="Введите ваше объявление" class="form-control"><br>
+      <textarea type="text" name="full_text" placeholder="Введите полное описание объвления"
+                class="form-control"th:value="${el.full_text}"></> <br>
+      <button type="submit" class="btn btn-success">Обновить объявление</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
